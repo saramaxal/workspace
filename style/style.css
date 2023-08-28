@@ -69,9 +69,13 @@ fieldset {
 }
 
 .container {
-    --padding: 30px;
+    --padding: 0px;
     --width: 1180px;
-    max-width: calc(var(--width)+var(--padding));
+    max-width: calc(var(--width) + var(--padding));
     margin: 0 auto;
     padding: var(--padding);
+}
+
+.blue-text {
+    color: #2A18FF;
 }

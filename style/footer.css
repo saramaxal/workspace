@@ -1,0 +1,35 @@
+.footer {
+    padding: 50px 0px 40px;
+}
+
+
+.footer__container {
+    display: grid;
+    gap: 27px;
+    grid-template-areas:
+        "logo ."
+        "copyrigth contacts";
+}
+
+.footer__logo {
+    grid-area: logo;
+}
+
+.footer__copyrigth {
+    grid-area: copyrigth;
+}
+
+
+.footer__contacts {
+    grid-area: contacts;
+    justify-self: end;
+    min-width: 180px;
+}
+
+.footer_contact:first-child {
+    margin-bottom: 8px;
+}
+
+.footer__link:hover {
+    color: brown;
+}

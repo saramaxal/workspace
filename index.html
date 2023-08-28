@@ -5,8 +5,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Workspace</title>
-    <link rel="stylesheet" href="style/normalize.css">
-    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="index.css">
+
+    <script src="./script/choices.min.js" defer></script>
+    <script src="./script/script.js" defer></script>
 </head>
 
 <body>
@@ -27,6 +29,7 @@
         </section>
         <div class="vacancies" id="vacancies">
             <div class="container vacancies__container">
+                <button class="vacancies__filter-btn">Фильтр</button>
                 <section class="vacancies__filter filter">
                     <h2 class="filter__title">Фильтр</h2>
                     <form class="filter__form">
@@ -49,8 +52,8 @@
                             </div>
                         </fieldset>
                         <div class="filter__checkboxes">
-                            <fieldset filter__fieldset>
-                                <legend>Формат</legend>
+                            <fieldset class="filter__fieldset">
+                                <legend class="filter__legend">Формат</legend>
                                 <label class="filter__label checkbox">
                                     <input type="checkbox" class="checkbox__input" name="format" value="Офис">Офис
                                 </label>
@@ -62,8 +65,8 @@
                                     <input type="checkbox" class="checkbox__input" name="format" value="Гибкий">Гибкий
                                 </label>
                             </fieldset>
-                            <fieldset filter__fieldset>
-                                <legend>Опыт работы</legend>
+                            <fieldset class="filter__fieldset">
+                                <legend class="filter__legend">Опыт работы</legend>
                                 <label class="filter__label checkbox">
                                     <input type="checkbox" class="checkbox__input" name="experience" value="Не важно">Не
                                     важно
@@ -81,8 +84,8 @@
                                         value="От 3-х лет">От 3-х лет
                                 </label>
                             </fieldset>
-                            <fieldset filter__fieldset>
-                                <legend>Занятость</legend>
+                            <fieldset class="filter__fieldset">
+                                <legend class="filter__legend">Занятость</legend>
                                 <label class="filter__label checkbox">
                                     <input type="checkbox" class="checkbox__input" name="
                                     type" value="Полная">Полная
