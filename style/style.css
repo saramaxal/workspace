@@ -70,8 +70,8 @@ fieldset {
 }
 
 .container {
-    --padding: 0px;
-    --width: 1180px;
+    --padding: 30px;
+    --width: 1210px;
     max-width: calc(var(--width) + var(--padding));
     margin: 0 auto;
     padding: var(--padding);
@@ -79,4 +79,23 @@ fieldset {
 
 .blue-text {
     color: #2A18FF;
+}
+
+@media (max-width: 1240px) {
+    .container {
+        --width: 920px;
+    }
+}
+
+@media (max-width: 940px) {
+    .container {
+        --width: 710px;
+    }
+}
+
+@media (max-width: 690px) {
+    .container {
+        --padding: 15px;
+    }
+
 }
