@@ -9,10 +9,25 @@
 }
 
 .header__link {
-    padding: 12px 32px;
+    z-index: 2;
+    padding: 10px 30px;
     background-color: #A6ADFF;
     border-radius: 8px;
     font-size: 20px;
+    text-align: center;
+    border: 2px solid transparent;
+    transition-property: color, background-color;
+    transition-duration: 0.1s;
+    transition-timing-function: ease-in-out;
+}
+
+.header__link:focus-visible {
+    border-color: #4F58BE;
+}
+
+.header__link:hover {
+    background-color: #2A18FF;
+    color: #FFF;
 }
 
 @media (max-width: 1240px) {
@@ -28,13 +43,14 @@
 
     .header__link {
         font-size: 14px;
-        padding: 9px 16px;
+        padding: 7.5px 16px;
+        width: 201px;
     }
 }
 
 @media (max-width: 690px) {
     .header {
-        padding: 24px 0 20px;
+        padding: 24px 0;
     }
 
     .header__link {

@@ -1,20 +1,22 @@
 .hero {
     padding: 60px 0px 50px;
+    height: 440px;
 }
 
 .hero__container {
     position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hero__container::after {
     content: '';
     position: absolute;
-    padding-top: 57px;
-    padding-bottom: 57px;
-    width: 412px;
+    width: 421px;
+    height: 421px;
     background: url('../image/laptop.png') no-repeat center/contain;
     right: -9px;
-    top: 0;
+    top: -120px;
     bottom: 0;
 }
 
@@ -36,6 +38,7 @@
 
     .hero {
         padding: 40px 0;
+        height: 340px;
     }
 
     .hero__container {
@@ -45,6 +48,7 @@
 
     .hero__container::after {
         width: 340px;
+        top: -95px;
     }
 }
 
@@ -52,12 +56,15 @@
 
     .hero {
         padding: 30px 0;
+        height: 264px;
     }
 
     .hero__title {
         font-size: 52px;
         max-width: 450px;
         letter-spacing: 1.04px;
+        font-weight: 400;
+
     }
 
     .hero__container {
@@ -67,13 +74,13 @@
 
     .hero__container::after {
         width: 269px;
+        top: -120px;
     }
 }
 
 @media (max-width: 690px) {
     .hero {
-        padding-top: 20px;
-        padding-bottom: 20px;
+        height: 335px;
     }
 
     .hero__container {
@@ -91,10 +98,12 @@
     }
 
     .hero__title {
+        padding-top: 32px;
         font-size: 32px;
         max-width: 290px;
         text-align: center;
         margin: auto;
+        letter-spacing: 0.64px;
     }
 
 }
