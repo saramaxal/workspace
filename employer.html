@@ -14,8 +14,14 @@
 <body>
     <header class="header">
         <div class="container header__container">
-            <img src="./image/logo.svg" alt="Логотип WorkSpace" class="header__logo">
-            <a href="#vacansies" class="header__link">Посмотреть вакансии</a>
+            <a href="index.html">
+                <img src="./image/logo.svg" alt="Логотип WorkSpace" class="header__logo">
+            </a>
+            <div class="header__links">
+                <a href="index.html#vacansies" class="header__link">Посмотреть вакансии</a>
+                <a href="employer.html" class="header__link header__link_o" style="display: none;">+ Добавить новую
+                    вакансию</a>
+            </div>
         </div>
     </header>
     <section class="employer">
@@ -30,10 +36,11 @@
                     </div>
                     <div class="file__wrap-btn">
                         <label for="logo" class="file__label">+ загрузить логотип</label>
-                        <input type="file" name="logo" id="logo" class="file__input" accept="image/png, image/jpeg">
+                        <input type="file" name="logo" id="logo" class="file__input" accept="image/png, image/jpeg"
+                            required>
                     </div>
                 </div>
-                <fieldest class="employer__fildset-input">
+                <fieldest class="employer__fildset employer__fildset_input">
                     <div class="employer__wrap-input">
                         <label for="company" class="employer__label">Название компании</label>
                         <input type="text" class="employer__input" id="company" name="company"
@@ -60,11 +67,11 @@
                             placeholder="Sobaka@gmail.com">
                     </div>
                 </fieldest>
-                <fieldet class="employer__fieldset-textarea">
+                <fieldset class="employer__fildset">
                     <label for="description" class="employer__label">Описание вакансии</label>
                     <textarea name="description" id="description" class="employer__textarea"
                         placeholder="Добавьте всю необходимую для соискателя информацию"></textarea>
-                </fieldet>
+                </fieldset>
                 <div class="employer__radio-buttons">
                     <fieldset class="employer__fieldset-radio">
                         <legend class="employer__legend">Формат</legend>
