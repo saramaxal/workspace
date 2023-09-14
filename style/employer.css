@@ -55,6 +55,7 @@
 .employer__fieldset-radio {
     display: flex;
     flex-direction: column;
+    gap: 8px;
 }
 
 .employer__legend {

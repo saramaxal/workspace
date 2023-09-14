@@ -182,6 +182,13 @@ const closeFilter = (btn, dropDown, classNameBtn, classNameDd) => {
 }
 
 const init = () => {
+
+    try {
+
+    } catch (error) {
+
+    }
+
     const filterForm = document.querySelector(".filter__form");
 
     const vacanciesFilterBtn = document.querySelector(".vacancies__filter-btn");
