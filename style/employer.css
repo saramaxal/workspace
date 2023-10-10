@@ -34,6 +34,8 @@
     padding: 0 16px;
     height: 32px;
     width: 100%;
+    outline: none;
+    border: 1px solid transparent;
 }
 
 .employer__textarea {
@@ -43,6 +45,18 @@
     resize: vertical;
     width: 100%;
     min-height: 140px;
+    outline: none;
+    border: 1px solid transparent;
+}
+
+.employer__input.invalid,
+.employer__textarea.invalid {
+    border-color: #F00;
+}
+
+.employer__input:focus-visible,
+.employer__textarea:focus-visible {
+    border-color: #A6ADFF;
 }
 
 .employer__radio-buttons {

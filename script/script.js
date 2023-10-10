@@ -302,7 +302,14 @@ const init = () => {
 
         const validationForm = (form) => {
             const validate = new JustValidate(form, {
-                errorsContainer: '.employer__error'
+                errorsContainer: '.employer__error',
+                errorLabelStyle: {
+                    color: "#f00"
+                },
+                errorFieldStyle: {
+                    borderColor: "#f00"
+                },
+                errorFieldCssClass: 'invalid'
             });
 
             validate
