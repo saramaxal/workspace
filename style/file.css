@@ -15,6 +15,11 @@
     min-width: auto;
 }
 
+.file_active .file__wrap-preview {
+    background-color: transparent;
+    min-width: atho;
+}
+
 .file__wrap-btn {
     position: relative;
 }

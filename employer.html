@@ -7,7 +7,7 @@
     <title>Workspace</title>
     <link rel="stylesheet" href="index.css">
 
-    <script src="./script/choices.min.js" defer></script>
+    <script src="./script/just-validate@4.2.0production.min.js" defer></script>
     <script defer src="./script/script.js"></script>
 </head>
 
@@ -73,7 +73,7 @@
                         placeholder="Добавьте всю необходимую для соискателя информацию"></textarea>
                 </fieldset>
                 <div class="employer__radio-buttons">
-                    <fieldset class="employer__fieldset-radio">
+                    <fieldset class="employer__fieldset-radio" id="format">
                         <legend class="employer__legend">Формат</legend>
                         <label class="employer__label-radio radio">
                             <input type="radio" class="radio__input" name="format" value="Офис">
@@ -88,7 +88,7 @@
                             Гибкий
                         </label>
                     </fieldset>
-                    <fieldset class="employer__fieldset-radio">
+                    <fieldset class="employer__fieldset-radio" id="experience">
                         <legend class="employer__legend">Опыт работы</legend>
                         <label class="employer__label-radio radio">
                             <input type="radio" class="radio__input" name="experience" value="Не важно">
@@ -107,7 +107,7 @@
                             От 3-х лет
                         </label>
                     </fieldset>
-                    <fieldset class="employer__fieldset-radio">
+                    <fieldset class="employer__fieldset-radio" id="type">
                         <legend class="employer__legend">Занятость</legend>
                         <label class="employer__label-radio radio">
                             <input type="radio" class="radio__input" name="type" value="Полная">
@@ -130,9 +130,7 @@
                 <div class="employer__wrap-submit">
                     <button class="employer__submit" type="submit">Добавить вакансию</button>
                     <div class="employer__error">
-                        <p>
-                            Ошибка. Заполните все поля
-                        </p>
+
                     </div>
                 </div>
             </form>
